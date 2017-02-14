@@ -1,7 +1,7 @@
 #!/bin/sh
 PATH=$PATH:/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin
 echo "[+] Check nrfutil"
-anrfutil version 2>/dev/null 1>&2
+nrfutil version 2>/dev/null 1>&2
 if [ "$?" != 0 ]; then
     echo "nrfutil not found! It could be a missing PATH to the tool or nrfutil is not installed"
     echo "  * Please check PATH or install nrfutil version 0.5.1!"
